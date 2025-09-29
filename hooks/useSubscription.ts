@@ -18,7 +18,7 @@ export function useSubscription() {
         apiKey: Platform.select({
           ios: process.env.EXPO_PUBLIC_REVENUECAT_IOS_KEY || 'your_ios_key',
           android: process.env.EXPO_PUBLIC_REVENUECAT_ANDROID_KEY || 'your_android_key',
-        }) as string,
+        }),
       });
 
       // Check current subscription status
